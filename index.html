@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,36 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Player Video</title>
 </head>
+
 <body>
+    <main id="player-video">
+        <h1 id="page-titulo">Video-Player</h1>
+        <section id="player">
+            <div class="container">
+
+                <div class="content">
+                    <h2 data-titulo-js>Titulo</h2>
+                    <video src="./assets/video/Brilhante-Animação.mp4">
+                    </video>
+
+                    <input data-range-js type="range" name="time-video" id = "time-video">
+
+                    <ul class="controls">
+                        <li id='voltar'><img src="./assets/icons/anterior.svg" alt=""></li>
+                        <li id='play'><img src="./assets/icons/play.svg" alt=""></li>
+                        <!-- <li class="controle" id = 'pause'><img src="./assets/icons/play.svg" alt=""></li> -->
+                        <li id='avancar'><img src="./assets/icons/proxima.svg" alt=""></li>
+                        <li id='volume'><img src="./assets/icons/volume.svg" alt=""></li>
+                        <input type="range" name="" id="volume-input">
+
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script type="module" src="./js/script.js"></script>
-    
 </body>
+
 </html>
